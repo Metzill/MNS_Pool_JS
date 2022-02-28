@@ -8,6 +8,7 @@ function playerChoice (btnClicked) {
         case 'Feuille': document.getElementById("imgMain").src = "Feuille.png"; iaChoice(1); break;
         case 'Ciseaux': document.getElementById("imgMain").src = "Ciseaux.png"; iaChoice(2); break;
     }
+    document.getElementById("choices").style.display = "block";
 }
 
 function iaChoice(playerHand) {
@@ -31,8 +32,6 @@ function iaChoice(playerHand) {
 function resetGame() {
     document.getElementById("imgMain").src ="";
     document.getElementById("imgOrdi").src ="";
-    document.getElementById("imgMain").style.display = "none";
-    document.getElementById("imgOrdi").style.display = "none";
     document.getElementById("choices").style.display = "none";
     document.getElementById("scorePlayer").innerHTML = 0;
     document.getElementById("scoreOrdi").innerHTML = 0;
