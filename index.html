@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+    <h1>Pierre-Feuille-Ciseaux</h1>
+
+    <div style="align-content: center;">
+
+        <div id="choices" style="display: none"><p>Votre main :</p> 
+        <img id="imgMain" src="" alt="main choisie" height="40" width="40">
+
+        <p>Main adverse :</p>
+        <img id="imgOrdi" src="" alt="main de l'ordinateur" height="40" width="40">
+        </div>
+
+        <button id="btnP" value="Pierre" onclick="playerChoice(this.value)"><img src="Pierre.png" alt="Pierre" height="40" width="40"></button>
+        <button id="btnF" value="Feuille" onclick="playerChoice(this.value)"><img src="Feuille.png" alt="Feuille" height="40" width="40"></button>
+        <button id="btnC" value="Ciseaux" onclick="playerChoice(this.value)"><img src="Ciseaux.png" alt="Ciseaux" height="40" width="40"></button>
+
+        <p><div>  Score joueur : <b id="scorePlayer">0</b> </div> 
+        <div>  Score ordinateur : <b id="scoreOrdi">0</b></div></p>
+
+        <button id="btnReset" onclick="resetGame()">Reset</button>
+
+    </div>
+</body>
+</html>
